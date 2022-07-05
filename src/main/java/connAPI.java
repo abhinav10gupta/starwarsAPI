@@ -18,7 +18,7 @@ public class API {
         HttpGet httpGet;
 
         if (searchquery == null) {
-            httpGet = new HttpGet("https://swapi.dev/api/people/1/");
+            httpGet = new HttpGet("https://swapi.dev/");
         } else {
             httpGet = new HttpGet("https://swapi.dev/api/" + path + "/?search=" + searchquery);
         }
